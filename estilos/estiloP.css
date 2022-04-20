@@ -222,7 +222,7 @@ para esta caja en particular se uso display grid.*/
     border-radius: 500px;
     padding: 45px;
 }
-/*Se utilizo para el HTML de origenes display flexbox.*/
+/*Se utilizo para el HTML de origen display flexbox.*/
 .contenedorOrigen{
     display: flex;
     flex-direction: row;
@@ -240,6 +240,51 @@ para esta caja en particular se uso display grid.*/
     align-items: flex-start;
     margin-top: 10%;
 }
+/*Se utilizo display block para el HTML de contacto.*/
+.contenedorDeDatos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+.imagen{
+    width: 30%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 10%;  
+}
+
+.datos{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    font-weight: 200; 
+}
+.areaDeTexto{
+    margin: 20px 0;
+}
+
+.btn{
+    background-color: #063a1b;
+    color: aliceblue;
+    border: 2px solid #063a1b;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 30%;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: #5ff19a;
+    color: #000;
+}
+
 /*Estilo para que el video del HTML de Preparacion sea responsive*/
 .video-responsive {
     position: relative;
@@ -258,7 +303,8 @@ para esta caja en particular se uso display grid.*/
     width: 100%;
     height: 100%;
     }
-/*Este footer ademas de los dos div como el footer principal, tiene otro div que tiene el navegador del navegador
+/*Este footer ademas de los dos div como el footer principal, 
+tiene otro div que tiene el navegador del navegador
  el cual se animo como el navegador principal*/
 .b-footer-menu{
     width: 90%;
@@ -293,7 +339,7 @@ para esta caja en particular se uso display grid.*/
     font-size: 10px;
     margin-top: 30px;
 }
-/*MediaQueries para general una pagina responsitive*/
+/*MediaQueries para generar una pagina responsitive*/
 /*Media de 0px a 576px*/
 @media (min-width: 0px)and (orientation:portrait) {
     .containerPrincipal {
