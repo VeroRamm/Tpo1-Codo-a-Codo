@@ -92,10 +92,6 @@ a{
     margin-right: 30px;
     flex-direction: row;
 }
-.conten-img:hover{
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-}
 /*Si bien el conteinerCuerpo tiene display flex, 
 para esta caja en particular se uso display grid.*/
 .conten2{
@@ -109,10 +105,6 @@ para esta caja en particular se uso display grid.*/
 }
 .conten2-article2-img{
     width: 500px;
-}
-.conten2-article2-img:hover{
-    filter: opacity(.7);
-    -webkit-filter: opacity(.7);
 }
 .conten2-article3-img{
     width: 500px;   
@@ -280,7 +272,6 @@ para esta caja en particular se uso display grid.*/
 .areaDeTexto{
     margin: 20px 0;
 }
-
 .btn{
     background-color: #063a1b;
     color: aliceblue;
