@@ -92,6 +92,10 @@ a{
     margin-right: 30px;
     flex-direction: row;
 }
+.conten-img:hover{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
 /*Si bien el conteinerCuerpo tiene display flex, 
 para esta caja en particular se uso display grid.*/
 .conten2{
@@ -106,9 +110,17 @@ para esta caja en particular se uso display grid.*/
 .conten2-article2-img{
     width: 500px;
 }
+.conten2-article2-img:hover{
+    filter: opacity(.7);
+    -webkit-filter: opacity(.7);
+}
 .conten2-article3-img{
     width: 500px;   
 }
+.conten2-article3-img:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+/*Esta seccion toma otro style para diferenciarla*/
 .curiosidades{
     width: 100%;
     margin-left: 20px;  
@@ -132,7 +144,7 @@ para esta caja en particular se uso display grid.*/
 .curiosidades-article1 h3{
     margin-bottom: -10px;
 }
-/*Este article tiene animacion para resaltar la lista*/
+/*Este article tiene animacion para resaltar la lista de curiosidades*/
 .article1-li{
     list-style: none;
     text-align: center;
@@ -140,6 +152,8 @@ para esta caja en particular se uso display grid.*/
 .article1-li:hover{
     animation-duration: 2s;
     animation-name: li-mouse;
+    background-color: rgb(8, 143, 66);
+    color: #fff;
 }
 @keyframes li-mouse {
     from {
@@ -251,9 +265,11 @@ para esta caja en particular se uso display grid.*/
     width: 30%;
     height: auto;
     margin-top: 10%;
-    margin-left: 10%;  
+    margin-left: 10%;
 }
-
+.imagen:hover { filter: sepia(70%); 
+    -webkit-filter: sepia(70%); 
+}
 .datos{
     display: inline-flex;
     flex-direction: column;
@@ -281,7 +297,7 @@ para esta caja en particular se uso display grid.*/
     font-size: 18px;
 }
 .btn:hover{
-    background-color: #5ff19a;
+    background-color: #754a19;
     color: #000;
 }
 
