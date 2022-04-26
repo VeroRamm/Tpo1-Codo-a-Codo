@@ -225,8 +225,12 @@ para esta caja en particular se uso display grid.*/
 }
 .b-conten p{
     border: 3px solid #063a1b;
-    border-radius: 500px;
-    padding: 45px;
+    border-radius: 10% 22% 33% 10% / 10% 27% 39% 10%;
+    padding: 40px;
+    -webkit-border-radius: 10% 22% 33% 10% / 10% 27% 39% 10%;
+    -moz-border-radius: 10% 22% 33% 10% / 10% 27% 39% 10%;
+    -ms-border-radius: 10% 22% 33% 10% / 10% 27% 39% 10%;
+    -o-border-radius: 10% 22% 33% 10% / 10% 27% 39% 10%;
 }
 /*Se utilizo para el HTML de origen display flexbox.*/
 .contenedorOrigen{
@@ -348,15 +352,19 @@ tiene otro div que tiene el navegador del navegador
 }
 /*MediaQueries para generar una pagina responsitive*/
 /*Media de 0px a 576px*/
-@media (min-width: 0px)and (orientation:portrait) {
+@media (min-width: 0px)and (max-width: 575px) and (orientation:portrait) {
     .containerPrincipal {
         flex-wrap: wrap;
         margin: 1px;
     }
     .conteinerCuerpo{
         font-size: 10px;
-        margin: 1px;
+        margin: 20px;
     }
+    .conten2{
+        display: block;
+    }
+    
     .article3>img{
         flex-wrap: wrap;
      }
@@ -370,16 +378,25 @@ tiene otro div que tiene el navegador del navegador
     .conten2-article3-img{
         width: 200px;
     }
+    .contenedorOrigen{
+        display: flex;
+        flex-direction: column;
+    }
 }
  /*Media de 576px a 768px*/
-@media (min-width: 576px) and (max-width: 768px) and (orientation:landscape) {
+@media (min-width: 576px) and (max-width: 768px) {
     .containerPrincipal {
         flex-wrap: wrap;
         margin: 1px;
     }
     .conteinerCuerpo{
         font-size: 15px;
-        margin: 1px;}
+        margin: 1px;
+    }
+    .conten2{
+        display: block;
+        margin: 0 20px;
+    }
     .conten2-article2-img{
             width: 200px;      
     }
@@ -390,6 +407,7 @@ tiene otro div que tiene el navegador del navegador
         border-radius: none;
         border: none;
     }
+    
 } 
 /*Media de 768px a 1200px */
 @media (min-width: 767.9px) and (max-width: 1200px) and (orientation:landscape) {
@@ -415,7 +433,8 @@ tiene otro div que tiene el navegador del navegador
     }
     .conteinerCuerpo{
         font-size: 15px;
-        margin: 1px;}
+        margin: 1px;
+    }
     .conten2-article2-img{
             width: 200px;      
     }
