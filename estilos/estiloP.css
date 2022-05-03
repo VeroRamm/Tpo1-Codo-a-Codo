@@ -7,7 +7,7 @@
     margin: 0;  
     font-family: 'Ubuntu', sans-serif;
 }
-/*Estilo de la pagina principal*/
+/*ESTILO DEL HTML PRINCIPAL*/
 /*Estilo en el header, con flexbox*/
 .containerPrincipal {
     width: 100%;
@@ -70,7 +70,7 @@ a{
     color: #000;
     text-shadow: 7px 8px 5px #063a1b;       
 }
-/*Comenzamos con el estilo del cuerpo, se trabajo con displat flexbox*/
+/*Comenzamos con el estilo del cuerpo, se trabajo con display flexbox*/
 .conteinerCuerpo{
     margin: 30px 40px;
     width: 100%;
@@ -112,7 +112,7 @@ para esta caja en particular se uso display grid.*/
 .conten2-article3-img:hover{
     -webkit-transform:scale(1.3);transform:scale(1.3);
 }
-/*Esta seccion toma otro style para diferenciarla*/
+/*Esta seccion del html principal toma otro estilo para diferenciarla*/
 .curiosidades{
     width: 100%;
     margin-left: 20px;  
@@ -184,7 +184,8 @@ para esta caja en particular se uso display grid.*/
 .footer-icon{
     text-align: center;
 }
-/*Empieza la estilo en el resto de las HTML*/
+/*ESTILO PARA LAS OTRAS HTMLs*/
+/*Estilo del header de las otras HTMLs*/
 .header-h2{
     width: 80%;
     text-align: center;
@@ -195,6 +196,7 @@ para esta caja en particular se uso display grid.*/
     text-transform: uppercase;
     text-shadow: #556b5e 10px 1px 9px;
 }
+/*Desde aca vemos el Estilo de la HTML Beneficios*/
 .b-header-img{
     width: 30%;
     height: auto;
@@ -232,6 +234,7 @@ para esta caja en particular se uso display grid.*/
     -ms-border-radius: 10% 22% 33% 10% / 10% 27% 39% 10%;
     -o-border-radius: 10% 22% 33% 10% / 10% 27% 39% 10%;
 }
+/*Estilo de la HTML de Origenes.*/
 /*Se utilizo para el HTML de origen display flexbox.*/
 .contenedorOrigen{
     display: flex;
@@ -250,6 +253,7 @@ para esta caja en particular se uso display grid.*/
     align-items: flex-start;
     margin-top: 10%;
 }
+/*Estilo de la HTML de contacto que tiene el formulario.*/
 /*Se utilizo display block para el HTML de contacto.*/
 .contenedorDeDatos{
     display: flex;
@@ -350,6 +354,8 @@ tiene otro div que tiene el navegador del navegador
     font-size: 10px;
     margin-top: 30px;
 }
+
+
 /*MediaQueries para generar una pagina responsitive*/
 /*Media de 0px a 576px*/
 @media (min-width: 0px)and (max-width: 575px) and (orientation:portrait) {
