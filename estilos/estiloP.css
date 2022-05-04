@@ -246,30 +246,23 @@ para esta caja en particular se uso display grid.*/
 }
 /*Estilo de la HTML de contacto que tiene el formulario.*/
 /*Se utilizo display block para el HTML de contacto.*/
-
-
+.bodyContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+}
 .contenedorDeDatos{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    width: 100%;
-    margin-top: -250px;
-    margin-left: 50px;
+    width: 50%;
+    
 }
-.imagen{
-    width: 30%;
+.imagenContacto{
+    width: 50%;
     height: auto;
-    margin-left: 20%;
+    margin-left: 80px;
 }
-.imagen:hover { filter: sepia(70%); 
+.imagenContacto:hover { filter: sepia(70%); 
     -webkit-filter: sepia(70%); 
-}
-.datos{
-    width: 100%;
-    height: auto;
-    margin-top: -10px;
-    margin-left: -10px;
 }
 .areaDeTexto{
     margin: 20px 0;
@@ -291,7 +284,7 @@ para esta caja en particular se uso display grid.*/
 	outline: 0;
 	border-color: #777;
 }
-
+/*
 .form-control.success input {
 	border-color: #2ecc71;
 }
@@ -328,7 +321,7 @@ para esta caja en particular se uso display grid.*/
 .form-control.error small {
 	visibility: visible;
 }
-
+*/
 .formBoton {
 	background-color: #0f7a38;
 	border: 2px solid #43c584;

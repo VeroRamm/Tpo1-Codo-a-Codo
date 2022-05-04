@@ -8,13 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2 class="header-h2">Enviamos comentarios y sugerencias</h2>
-    <div class="imagen">
-      <img src="./img/hojamate.jpg" alt="300px"><!--Se creo animacion para esta seccion-->
-    </div>
-    <div class="contenedorDeDatos">
-    <form action="" class="formulario" id="formulario">
-      <div class="datos">
+  <h2 class="header-h2">Enviamos comentarios y sugerencias</h2>
+  <div class="bodyContacto">
+    <img src="./img/hojamate.jpg" alt="300px" class="imagenContacto"><!--Se creo animacion para esta seccion-->
+      <form action="" class="contenedorDeDatos" id="formulario">
         <!--Ingreso de nombre, input que se valida-->
         <div class="form-control">
           <label for="nombre">Nombre</label>
@@ -36,48 +33,38 @@
         <!-- Ingreso de email, input que se valida -->
         <div class="form-control">
           <label for="email">Email</label>
-          <input type="email" placeholder="grovervas@email.com" id="email" />
+          <input type="email" placeholder="email@email.com" id="email" />
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
           <small>Error message</small>
         </div>
-      </div>
-      <!--Formulario de gustos-->
-      <div class="formularioTipo" id="tipo">
-        <p>Que tipo de yerba prefiere?</p>
-        <select name=" sabores" id="sabores">
-          <option value="1"> Yerba con palo</option>
-          <option value="2"> Yerba sin palo</option>
-          <option value="3"> Yerba saborizada</option>
-          <option value="4"> Yerba con compuesta con hierbas aromaticas</option>
-        </select>
-      </div>
-      <!--Formulario de opcion
-      <div class="formulario__grupo" id="grupo__opcion">
-        <p>Elige una opcion</p>
-        <input type="radio" name="opcion"value="Consulta">Consulta
-        <input type="radio" name="opcion"value="Sugerencia">Sugerencia
-        <input type="radio" name="opcion"value="Reclamo">Reclamo <br>
-      </div>-->
-
-      <!--Formulario de comentarios-->
-      <div class="formulario__grupo areaDeTexto" id="grupo__texto">
-        <label for="escribir">Puede escribir</label> <br>
-        <textarea name="escribir" cols="40" rows="10"></textarea><br>
-      </div>
-      <!--Formulario de recibir info-->
-      <div class="mail">
-        <p>Te gustaria recibir informacion por mail?</p>
-        <input type="radio" name="opcion"value="Si">Si
-        <input type="radio" name="opcion"value="No">No
-      </div>
-      <!--Boton de enviar-->
-			<div >
-				<button type="submit" class="formBoton" >Enviar</button>
-				
-			</div> 
-    </form>
-  </div> 
+        <!--Formulario de gustos-->
+        <div class="formularioTipo" id="tipo">
+          <p>Que tipo de yerba prefiere?</p>
+          <select name=" sabores" id="sabores">
+            <option value="1"> Yerba con palo</option>
+            <option value="2"> Yerba sin palo</option>
+            <option value="3"> Yerba saborizada</option>
+            <option value="4"> Yerba con compuesta con hierbas aromaticas</option>
+          </select>
+        </div>
+        <!--Formulario de comentarios-->
+        <div class="formulario__grupo areaDeTexto" id="grupo__texto">
+          <label for="escribir">Puede escribir</label> <br>
+          <textarea name="escribir" cols="40" rows="10"></textarea><br>
+        </div>
+       <!--Formulario de recibir info-->
+        <div class="mail">
+          <p>Te gustaria recibir informacion por mail?</p>
+          <input type="radio" name="opcion"value="Si">Si
+          <input type="radio" name="opcion"value="No">No
+        </div>
+       <!--Boton de enviar-->
+        <div >
+          <button type="submit" class="formBoton" >Enviar</button>
+        </div> 
+      </form>
+</div>
   
   
      <footer>
