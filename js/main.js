@@ -6,7 +6,6 @@ const expresiones = {
 }
 
 const campos = {
-	usuario: false,
 	nombre: false,
     apellido: false,
 	correo: false
