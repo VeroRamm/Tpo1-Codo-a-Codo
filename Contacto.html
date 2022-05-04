@@ -9,40 +9,41 @@
 </head>
 <body>
     <h2 class="header-h2">Enviamos comentarios y sugerencias</h2>
-  <div class="contenedorDeDatos">
     <div class="imagen">
       <img src="./img/hojamate.jpg" alt="300px"><!--Se creo animacion para esta seccion-->
     </div>
+    <div class="contenedorDeDatos">
     <form action="" class="formulario" id="formulario">
       <div class="datos">
         <!--Ingreso de nombre, input que se valida-->
-        <div class="formulario__grupo" id="grupo__nombre">
-          <label for="nombre" class="formulario__label">Nombre</label>
-          <div class="formulario__grupo-input">
-            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
-          </div>
-          <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+        <div class="form-control">
+          <label for="nombre">Nombre</label>
+          <input type="text" placeholder="Nombre" id="nombre" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
         </div>
               
-              <!-- Ingreso de apellido, input que se valida-->
-          <div class="formulario__grupo" id="grupo__apellido">
-          <label for="apellido" class="formulario__label">Apellido</label>
-          <div class="formulario__grupo-input">
-            <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">    
-          </div>
-          <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-        </div>
+      <!-- Ingreso de apellido, input que se valida-->
+        <div class="form-control">
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="apellido" id="apellido" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>    
+          
         <!-- Ingreso de email, input que se valida -->
-			<div class="formulario__grupo" id="grupo__correo">
-				<label for="correo" class="formulario__label">Correo Electrónico</label>
-				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">			
-				</div>
-				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-			</div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" placeholder="grovervas@email.com" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
       </div>
       <!--Formulario de gustos-->
-      <div class="formulario__grupo" id="grupo__tilde">
+      <div class="formularioTipo" id="tipo">
         <p>Que tipo de yerba prefiere?</p>
         <select name=" sabores" id="sabores">
           <option value="1"> Yerba con palo</option>
@@ -71,12 +72,13 @@
         <input type="radio" name="opcion"value="No">No
       </div>
       <!--Boton de enviar-->
-			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Enviar</button>
+			<div >
+				<button type="submit" class="formBoton" >Enviar</button>
+				
 			</div> 
     </form>
   </div> 
-  <script src="./js/main.js"></script>
+  
   
      <footer>
       <div class="b-footer-menu"> <!--Se creo animacion para esta seccion-->
@@ -100,6 +102,6 @@
       </div>
     </footer>
 
- 
+    <script src="./js/main.js"></script>
 
 </body>
