@@ -1,4 +1,4 @@
-const formulario = document.querySelector('#formulario');
+
 const nombre = document.querySelector('#nombre');
 const apellido = document.querySelector('#apellido');
 const email = document.querySelector('#email');
@@ -12,7 +12,7 @@ validaCampos = () => {
 		alert('Formulario enviado');
 		formulario.submit();
 	} else {
-		alert('Todos los campos son obligatorios');
+		alert('Todos los campor tienen que estar completos');
 	}
 };
 
