@@ -28,22 +28,21 @@ const validarFormulario = (e) => {
 }
 const validarCampo= (expresion, input, campo) => {
 	if (expresion.test(input.value)) {
-		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo--incorrecto');
-		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo--correcto');
-		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__grupo__input-error--validado');
+		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
+		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
+		document.querySelectorAll(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__grupo__input-error-activo');
 		campos[campo] = true;
 	} else {
-		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo--incorresto');
-		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo--correcto');
-		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__grupo__input-error--validado');
-
+		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorresto');
+		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
+		document.querySelectorAll(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__grupo__input-error-activo');
+		
 	}
-
+}
 inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario);
 	input.addEventListener('blur', validarFormulario);
 });
-}
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
