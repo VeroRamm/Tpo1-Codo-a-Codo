@@ -326,12 +326,20 @@ para esta caja en particular se uso display grid.*/
 	background-color: #0f7a38;
 	border: 2px solid #43c584;
 	border-radius: 4px;
-	color: #fff;
+	color: rgb(209, 202, 202);
 	display: block;
 	font-size: 16px;
 	padding: 10px;
 	margin-top: 20px;
 	width: 100%;
+    font-weight: bold;
+}
+.formBoton:hover {
+    background-color: #b4f3d4;
+    border: 2px solid #0f7a38;
+    color: rgb(37, 34, 34);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /*Estilo para que el video del HTML de Preparacion sea responsive*/
