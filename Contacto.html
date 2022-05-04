@@ -13,13 +13,36 @@
     <div class="imagen">
       <img src="./img/hojamate.jpg" alt="300px"><!--Se creo animacion para esta seccion-->
     </div>
-    <form action="show_data.html" target="_blank">
+    <form action="" class="formulario" id="formulario">
       <div class="datos">
-        <label for="nombre">Nombre: </label><input type="text"size="30"name="Nombre"placeholder="Ingrese su nombre"><br>
-        <label for="Apellido">Apellido: </label><input type="text"size="30"name="Apellido"placeholder="Ingrese su apellido"><br>
-        <label for="mail">Mail: </label><input type="email" name="mail"size="35"placeholder="email@email.com" > 
+        <!--Ingreso de nombre, input que se valida-->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="formulario__label">Nombre</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+          </div>
+          <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+        </div>
+              
+              <!-- Ingreso de apellido, input que se valida-->
+          <div class="formulario__grupo" id="grupo__apellido">
+          <label for="apellido" class="formulario__label">Apellido</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">    
+          </div>
+          <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+        </div>
+        <!-- Ingreso de email, input que se valida -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">			
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
       </div>
-      <div class="gusto">
+      <!--Formulario de gustos-->
+      <div class="formulario__grupo" id="grupo__tilde">
         <p>Que tipo de yerba prefiere?</p>
         <select name=" sabores" id="sabores">
           <option value="1"> Yerba con palo</option>
@@ -28,26 +51,33 @@
           <option value="4"> Yerba con compuesta con hierbas aromaticas</option>
         </select>
       </div>
-      <div class="tipoAccion">
+      <!--Formulario de opcion
+      <div class="formulario__grupo" id="grupo__opcion">
         <p>Elige una opcion</p>
         <input type="radio" name="opcion"value="Consulta">Consulta
         <input type="radio" name="opcion"value="Sugerencia">Sugerencia
         <input type="radio" name="opcion"value="Reclamo">Reclamo <br>
-      
-      </div>
-      <div class="areaDeTexto">
+      </div>-->
+
+      <!--Formulario de comentarios-->
+      <div class="formulario__grupo areaDeTexto" id="grupo__texto">
         <label for="escribir">Puede escribir</label> <br>
         <textarea name="escribir" cols="40" rows="10"></textarea><br>
       </div>
+      <!--Formulario de recibir info-->
       <div class="mail">
         <p>Te gustaria recibir informacion por mail?</p>
         <input type="radio" name="opcion"value="Si">Si
         <input type="radio" name="opcion"value="No">No
       </div>
-      <button class="btn">Enviar</button>
-      <button class="btn">Reset</button> 
+      <!--Boton de enviar-->
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+			</div> 
     </form>
-  </div>  
+  </div> 
+  <script src="./js/main.js"></script>
+  
      <footer>
       <div class="b-footer-menu"> <!--Se creo animacion para esta seccion-->
         <a href="index.html">> Volver a pagina principal</a>

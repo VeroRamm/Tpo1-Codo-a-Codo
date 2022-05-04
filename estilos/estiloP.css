@@ -174,16 +174,7 @@ para esta caja en particular se uso display grid.*/
 .clean{
     clear: both;
 }
-/*El footer de la pagina principal no tiene opcion de barra de navegacion como tienen las otras HTMLs. */
-.Footer-Principal {     
-    text-align: center;
-    border-top: 1px solid #063a1b;
-    padding-top: 10px;
-    font-size: 10px;
-}
-.footer-icon{
-    text-align: center;
-}
+
 /*ESTILO PARA LAS OTRAS HTMLs*/
 /*Estilo del header de las otras HTMLs*/
 .header-h2{
@@ -255,17 +246,75 @@ para esta caja en particular se uso display grid.*/
 }
 /*Estilo de la HTML de contacto que tiene el formulario.*/
 /*Se utilizo display block para el HTML de contacto.*/
+.formulario__label {
+	display: block;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+}
+
+.formulario__btn {
+	height: 45px;
+    margin: 10px 0;
+	width: 30%;
+	background: rgb(1, 151, 51);
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
 .contenedorDeDatos{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
 }
 .imagen{
     width: 30%;
     height: auto;
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 .imagen:hover { filter: sepia(70%); 
     -webkit-filter: sepia(70%); 
@@ -276,28 +325,11 @@ para esta caja en particular se uso display grid.*/
     justify-content: space-around;
     align-items: space-around;
     font-weight: 200; 
+    padding: 20px;
 }
 .areaDeTexto{
     margin: 20px 0;
-}
-.btn{
-    background-color: #063a1b;
-    color: aliceblue;
-    border: 2px solid #063a1b;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    padding: 10px;
-    margin-top: 10px;
-    text-align: center;
-    width: 30%;
-    font-size: 18px;
-}
-.btn:hover{
-    background-color: #754a19;
-    color: #000;
+    width: 100%;
 }
 
 /*Estilo para que el video del HTML de Preparacion sea responsive*/
@@ -318,11 +350,23 @@ para esta caja en particular se uso display grid.*/
     width: 100%;
     height: 100%;
     }
+
+/*El footer de la pagina principal no tiene opcion de barra de navegacion como tienen las otras HTMLs. */
+.Footer-Principal {   
+    width: 100%;;  
+    text-align: center;
+    border-top: 1px solid #063a1b;
+    padding-top: 10px;
+    font-size: 10px;
+}
+.footer-icon{
+    text-align: center;
+}
 /*Este footer ademas de los dos div como el footer principal, 
 tiene otro div que tiene el navegador del navegador
  el cual se animo como el navegador principal*/
 .b-footer-menu{
-    width: 90%;
+    width: 100%;
     display:grid;
     grid-template-columns: repeat(5, auto);
     margin-top: 30px;
@@ -349,7 +393,6 @@ tiene otro div que tiene el navegador del navegador
 }
 .b-footer-div{
     text-align: center;
-    
     padding-top: 10px;
     font-size: 10px;
     margin-top: 30px;
