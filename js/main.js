@@ -5,7 +5,7 @@ const apellido = document.getElementById('apellido');
 const email = document.getElementById('email');
 let error = document.getElementById('error');
 
-let mensajeError = [];
+
 
 function validarNombre() {
 	if (nombre.value.length<3 || nombre.value === null || !nombre.value ==/^[a-zA-ZÀ-ÿ\s]{1,40}$/) {
