@@ -5,16 +5,14 @@ const apellido = document.getElementById('apellido');
 const email = document.getElementById('email');
 let error = document.getElementById('error');
 
-
-
 function validarNombre() {
-	if (nombre.value.length<3 || nombre.value === null || !nombre.value ==/^[a-zA-ZÀ-ÿ\s]{1,40}$/) {
-		mensajeError.push('El nombre debe tener al menos 3 caracteres');
+	if (nombre.value.length<3 || nombre.value === null || !nombre.value ===/^[a-zA-ZÀ-ÿ\s]{1,40}$/) {
+		mensajeError.push('Por favor ingrese un nombre valido');
 	}
 }
 function validarApellido() {
-	if (apellido.value.length<3 || apellido.value === null || !apellido.value ==/^[a-zA-ZÀ-ÿ\s]{1,40}$/) {
-		mensajeError.push('El apellido debe tener al menos 3 caracteres');
+	if (apellido.value.length<3 || apellido.value === null || !apellido.value ===/^[a-zA-ZÀ-ÿ\s]{1,40}$/) {
+		mensajeError.push('por favor ingrese un apellido valido');
 	}
 }
 function validarEmail() {
@@ -34,11 +32,8 @@ if (formulario.addEventListener('submit', function(e) {
 		alert('Formulario enviado');
 		formulario.submit();
 	}
-	}));
+}));
 
-
-	
-	
 
 
 
