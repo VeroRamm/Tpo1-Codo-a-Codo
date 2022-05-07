@@ -414,8 +414,8 @@ para esta caja en particular se uso display grid.*/
     }
 
 }
- /*Media de 576px a 767px*/
-@media (min-width: 576px) and (max-width: 768px) {
+ /*Media de 576px a 850px*/
+@media (min-width: 576px) and (max-width: 850px) {
     .containerPrincipal {
         flex-wrap: wrap;
         margin: 1px;
@@ -467,8 +467,8 @@ para esta caja en particular se uso display grid.*/
         display: none;
     }
 } 
-/*Media de 768px a 1100px */
-@media (min-width: 767.9px) and (max-width: 1200px) and (orientation:landscape) {
+/*Media de 850px a 1100px */
+@media (min-width: 850.1px) and (max-width: 1200px) and (orientation:landscape) {
     .containerPrincipal {
         margin: 1px;
     }
