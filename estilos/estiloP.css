@@ -388,8 +388,7 @@ para esta caja en particular se uso display grid.*/
         width: 200px;
     }
     .contenedorOrigen{
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
     }
     .div-img{
         display: none;
@@ -462,6 +461,9 @@ para esta caja en particular se uso display grid.*/
     }
     .b-footer-div{
         font-size: 10px;
+    }
+    .contenedorOrigen{
+        grid-template-columns: 1fr 1fr;
     }
     .origen1 img{
         display: none;
