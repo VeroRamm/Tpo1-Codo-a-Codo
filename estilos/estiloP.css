@@ -391,7 +391,7 @@ para esta caja en particular se uso display grid.*/
         grid-template-columns: 1fr 1fr;
     }
     .div-img{
-        display: none;
+        visibility: hidden;
     }
     .header-h1{
         font-size: 40px;
@@ -400,7 +400,7 @@ para esta caja en particular se uso display grid.*/
         font-size: 18px;
     }
     .imagenContacto{
-        display: none;
+        visibility: hidden;
     }
     .contenedorDeDatos{
         width: 100%;
@@ -409,7 +409,7 @@ para esta caja en particular se uso display grid.*/
         font-size: 13px;
     }
     .origen1 img{
-        display: none;
+        visibility: hidden;
     }
 
 }
@@ -442,7 +442,7 @@ para esta caja en particular se uso display grid.*/
         border: none;
     }
     .div-img{
-        display: none;
+        visibility: visible;
     }
     .header-h1{
         font-size: 70px;
@@ -451,7 +451,7 @@ para esta caja en particular se uso display grid.*/
         font-size: 18px;
     }
     .imagenContacto{
-        display: none;
+        visibility: hidden;
     }
     .contenedorDeDatos{
         width: 100%;
@@ -466,7 +466,7 @@ para esta caja en particular se uso display grid.*/
         grid-template-columns: 1fr 1fr;
     }
     .origen1 img{
-        display: none;
+        visibility: hidden;
     }
 } 
 /*Media de 850px a 1100px */
