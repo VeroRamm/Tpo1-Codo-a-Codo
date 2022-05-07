@@ -267,23 +267,33 @@ para esta caja en particular se uso display grid.*/
 .imagenContacto:hover { filter: sepia(70%); 
     -webkit-filter: sepia(70%); 
 }
-.areaDeTexto{
-    margin: 20px 0;
-    width: 100%;
-}
+
 .form-control label {
 	display: inline-block;
-	margin-bottom: 5px;
+	margin-top: 10px;
+    
 }
 .form-control input {
 	display: block;
 	font-size: 14px;
 	padding: 5px;
 	width: 100%;
+    margin: 10px;
 }
 .form-control input:focus {
 	outline: 0;
 	border-color: #777;
+}
+.error{
+    display: none;
+}
+.error-desactivado{
+    display: none;
+}
+.error-activado{
+    color: red;
+    font-size: 12px;
+    display: block;
 }
 /*
 .form-control.success input {

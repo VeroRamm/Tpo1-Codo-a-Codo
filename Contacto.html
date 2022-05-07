@@ -16,18 +16,21 @@
         <div class="form-control">
           <label for="nombre">Nombre</label>
           <input type="text" placeholder="Nombre" id="nombre" />
+         <span class="error" id="errorNombre">Por favor ingrese correctamente el nombre</span>
         </div>
               
       <!-- Ingreso de apellido, input que se valida-->
         <div class="form-control">
             <label for="apellido">Apellido</label>
             <input type="text" placeholder="Apellido" id="apellido" />
+            <span class="error" id="errorApellido">Por favor ingrese correctamente el nombre</span>
            </div>    
           
         <!-- Ingreso de email, input que se valida -->
         <div class="form-control">
           <label for="email">Email</label>
           <input type="email" placeholder="email@email.com" id="email" />
+          <span class="error" id="errorEmail">Por favor ingrese correctamente el nombre</span>
         </div>
         <!--Formulario de gustos-->
         <div class="formularioTipo" id="tipo">
@@ -40,12 +43,12 @@
           </select>
         </div>
         <!--Formulario de comentarios-->
-        <div class="formulario__grupo areaDeTexto" id="grupo__texto">
+        <div class="form-control" id="grupo__texto">
           <label for="escribir">Puede escribir</label> <br>
           <textarea name="escribir" cols="40" rows="10"></textarea><br>
         </div>
        <!--Formulario de recibir info-->
-        <div class="info">
+        <div class="info" id="info">
           <p>Te gustaria recibir noticias por mail?</p>
           <input type="radio" name="opcion"value="Si">Si
           <input type="radio" name="opcion"value="No">No
@@ -78,6 +81,6 @@
       </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>

@@ -1,27 +1,43 @@
-const nombre = document.querySelector('#nombre');
-const apellido = document.querySelector('#apellido');
-const email = document.querySelector('#email');
+const formulario = document.getElementById('form');
 
-validaCampos = () => {
-	const nombreValido = nombre.value.trim() !== '' && nombre.value.trim().length > 2;
-	const apellidoValido = apellido.value.trim() !== '' && apellido.value.trim().length > 2;
-	const emailValido = email.value.trim() !== '' && email.value.includes('@') && email.value.includes('.');
+const nom = document.getElementById('nombre');
+const apellido = document.getElementById('apellido');
+const email = document.getElementById('email');
+const info = document.getElementById('info');
 
-	if (nombreValido && apellidoValido && emailValido) {
-		alert('Formulario enviado');
-		formulario.submit();
-	} else {
-		alert('Todos los campor tienen que estar completos');
-	}
-};
 
-formulario.addEventListener('submit', (e) => {
+formulario.addEventListener('submit', function(e){
 	e.preventDefault();
-	validaCampos();
+	validarForm();
 });
+
+const validarDatos = () => {
+nombre.addEventListener('change', (e)=>{
+	if(e.target.value.trim().length > 0) validarDatos.nom = true;
+});
+apellido.addEventListener('change', (e)=>{
+ if(e.target.value.trim().length > 0) validarDatos.apellido = true;
+ });
+email.addEventListener('change', (e)=>{
+ if(e.target.value.trim().length > 0) validarDatos.email = true;
+ });
+info.addEventListener('change', (e)=>{
+	 if(e.target.checked == true) validarDatos.info = true;
+});
+}
+ const validarForm = () => {
+	validarDatos();
+	if(validarDatos.nom && validarDatos.apellido && validarDatos.email && validarDatos.info){
+		formulario.submit();
+		alert('Formulario enviado');
+	}
+	else{
+		alert('Por favor, llene todos los campos de forma correcta');
+	}
+}
+
+
 	
-
-
 
 
 
