@@ -1,40 +1,45 @@
 const formulario = document.getElementById('form');
 
-const nom = document.getElementById('nombre');
+const nombre = document.getElementById('nombre');
 const apellido = document.getElementById('apellido');
 const email = document.getElementById('email');
-const info = document.getElementById('info');
+let error = document.getElementById('error');
 
+let mensajeError = [];
 
-formulario.addEventListener('submit', function(e){
+function validarNombre() {
+	if (nombre.value.length<3 || nombre.value === null || !nombre.value ==/^[a-zA-ZÀ-ÿ\s]{1,40}$/) {
+		mensajeError.push('El nombre debe tener al menos 3 caracteres');
+	}
+}
+function validarApellido() {
+	if (apellido.value.length<3 || apellido.value === null || !apellido.value ==/^[a-zA-ZÀ-ÿ\s]{1,40}$/) {
+		mensajeError.push('El apellido debe tener al menos 3 caracteres');
+	}
+}
+function validarEmail() {
+	if (email.value==="" || email.value === null || email.value ==/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/) {
+		mensajeError.push('El email no es valido');
+	}
+}
+if (formulario.addEventListener('submit', function(e) {
 	e.preventDefault();
-	validarForm();
-});
-
-const validarDatos = () => {
-nombre.addEventListener('change', (e)=>{
-	if(e.target.value.trim().length > 0) validarDatos.nom = true;
-});
-apellido.addEventListener('change', (e)=>{
- if(e.target.value.trim().length > 0) validarDatos.apellido = true;
- });
-email.addEventListener('change', (e)=>{
- if(e.target.value.trim().length > 0) validarDatos.email = true;
- });
-info.addEventListener('change', (e)=>{
-	 if(e.target.checked == true) validarDatos.info = true;
-});
-}
- const validarForm = () => {
-	validarDatos();
-	if(validarDatos.nom && validarDatos.apellido && validarDatos.email && validarDatos.info){
-		formulario.submit();
+	mensajeError = [];
+	validarNombre();
+	validarApellido();
+	validarEmail();
+	if (mensajeError.length > 0) {
+	error.innerHTML = mensajeError.join('<br>');
+	} else {
 		alert('Formulario enviado');
+		formulario.submit();
 	}
-	else{
-		alert('Por favor, llene todos los campos de forma correcta');
-	}
-}
+	}));
+
+
+	
+	
+
 
 
 	

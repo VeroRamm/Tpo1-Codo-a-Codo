@@ -271,68 +271,18 @@ para esta caja en particular se uso display grid.*/
 .form-control label {
 	display: inline-block;
 	margin-top: 10px;
-    
 }
 .form-control input {
 	display: block;
 	font-size: 14px;
 	padding: 5px;
 	width: 100%;
-    margin: 10px;
 }
-.form-control input:focus {
-	outline: 0;
-	border-color: #777;
-}
-.error{
-    display: none;
-}
-.error-desactivado{
-    display: none;
-}
-.error-activado{
+#error{
     color: red;
-    font-size: 12px;
+    font-size: 15px;
     display: block;
 }
-/*
-.form-control.success input {
-	border-color: #2ecc71;
-}
-
-.form-control.error input {
-	border-color: #e74c3c;
-}
-
-.form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
-}
-
-.form-control small {
-	color: #e74c3c;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-}
-
-.form-control.error small {
-	visibility: visible;
-}
-*/
 .formBoton {
 	background-color: #0f7a38;
 	border: 2px solid #43c584;
@@ -413,14 +363,13 @@ tiene otro div que tiene el navegador del navegador
     .conten2{
         display: block;
     }
-    
     .article3>img{
         flex-wrap: wrap;
-     }
+    }
      .b-conten p{
          border-radius: none;
          border: none;
-     }
+    }
      .conten2-article2-img{
         width: 200px;
     }
@@ -437,6 +386,16 @@ tiene otro div que tiene el navegador del navegador
     .header-h1{
         font-size: 40px;
     }
+    .form-control input{
+        font-size: 18px;
+    }
+    .imagenContacto{
+        display: none;
+    }
+    .contenedorDeDatos{
+        width: 100%;
+    }
+
 }
  /*Media de 576px a 767px*/
 @media (min-width: 576px) and (max-width: 768px) {
