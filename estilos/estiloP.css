@@ -358,7 +358,7 @@ para esta caja en particular se uso display grid.*/
 }
 /*MediaQueries para generar una pagina responsitive*/
 /*Media de 0px a 576px*/
-@media (min-width: 0px)and (max-width: 575px) and (orientation:portrait) {
+@media (min-width: 0px)and (max-width: 575px) {
     .containerPrincipal {
         margin: 1px;
     }
