@@ -54,7 +54,7 @@ formulario.addEventListener('submit', function(e) {
 		alert('Formulario enviado');
 		formulario.submit();
 	}
-
+});
 
 
 
