@@ -38,8 +38,12 @@ formulario.addEventListener('submit', function(e) {
 	validarTexto();
 	if (mensajeError.length > 0) {
 		error.innerHTML = mensajeError.join('<br>');
+		setTimeout((mensajeError) => {
+			alert('Vuelva a ingresar los datos.');
+			formulario.submit();
+		}, 1000);
 	} else {
-		alert('Formulario enviado');
+	alert('Formulario enviado');
 		formulario.submit();
 	}
 });
