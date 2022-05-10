@@ -41,7 +41,7 @@ formulario.addEventListener('submit', function(e) {
 		setTimeout((mensajeError) => {
 			alert('Vuelva a ingresar los datos.');
 			formulario.submit();
-		}, 1000);
+		}, 2000);
 	} else {
 	alert('Formulario enviado');
 		formulario.submit();
