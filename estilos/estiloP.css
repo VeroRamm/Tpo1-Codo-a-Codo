@@ -277,6 +277,7 @@ para esta caja en particular se uso display grid.*/
 	padding: 5px;
 	width: 100%;
 }
+/*Mensaje de error al cargar el formulario*/
 #error{
     color: red;
     font-size: 15px;
@@ -406,7 +407,7 @@ para esta caja en particular se uso display grid.*/
         width: 100%;
     }
     .b-footer-div{
-        font-size: 13px;
+        font-size: 10px;
     }
     .origen1 img{
         display: none;
